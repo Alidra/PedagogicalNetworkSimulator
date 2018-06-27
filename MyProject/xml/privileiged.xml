@@ -1,0 +1,2248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<command Mode="2">
+
+	<adruna99 type="una99">
+		Session number to resume
+		<cr method="unimplemented"></cr>
+	</adruna99>
+
+	<auto>
+		Exec level Automation
+		<secure>
+			AutoSecure Commands
+			<cr method="unimplemented"></cr>
+		</secure>
+	</auto>
+
+	<clear>
+		Reset functions
+		<aaa>
+			Clear AAA values
+			<local>
+				Clear AAA local method options
+				<user>
+					Clear local AAA users
+					<lockout>
+						Clear locked out local AAA users
+						<all>
+							Clear all the locked users
+							<cr method="unimplemented"></cr>
+						</all>
+						<username>
+							Username of the locked-user
+							<adrWORD type="WORD">
+								Specify the username of the locked user
+								<cr method="unimplemented"></cr>
+							</adrWORD>
+						</username>
+					</lockout>
+				</user>
+			</local>
+		</aaa>
+		<accessalist>
+			Clear access list statistical information
+			<counters>
+				Clear access list counters
+				<adruna999 type="una999">
+					Access list number
+					<cr method="unimplemented"></cr>
+				</adruna999>
+				<adr1300a2699 type="133a2699">
+					Access list number (expanded range)
+					<cr method="unimplemented"></cr>
+				</adr1300a2699>
+				<adrWORD type="WORD">
+					Access list name
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+				<cr method="unimplemented"></cr>
+			</counters>
+		</accessalist>
+		<arp-cache>
+			Clear the entire ARP cache
+			<cr method="clearArpCache"></cr>
+		</arp-cache>
+		<cdp>
+			Reset cdp information
+			<table>
+				Clear cdp table
+				<cr method="unimplemented"></cr>
+			</table>
+		</cdp>
+		<framearelay>
+			Clear Frame Relay information
+			<counter>
+				Clear Frame Relay counters
+				<cr method="unimplemented"></cr>
+			</counter>
+			<inarp>
+				Clear inverse ARP entries from the map table
+				<cr method="unimplemented"></cr>
+			</inarp>
+		</framearelay>
+		<ip>
+			IP
+			<bgp>
+				Clear BGP connections
+
+				<cr method="unimplemented"></cr>
+
+			</bgp>
+			<nat>
+				Clear NAT
+				<translation>
+					Clear dynamic translation
+
+					<cr method="unimplemented"></cr>
+
+				</translation>
+			</nat>
+			<ospf>
+				Reset OSPF process
+				<process>
+					Reset OSPF process
+					<cr method="unimplemented"></cr>
+				</process>
+			</ospf>
+			<route>
+
+				<cr method="unimplemented"></cr>
+
+				<adrABCD type="ABCD">
+					Destination network route to delete
+					<adrABCD type="ABCD">
+						Destination network
+						<cr method="unimplemented"></cr>
+					</adrABCD>
+					<cr method="unimplemented"></cr>
+				</adrABCD>
+			</route>
+		</ip>
+	</clear>
+
+	<clock>
+		Manage the system clock
+		<set>
+			Set the time and date
+			<hh>
+				Current Time
+				<adrMONTH type="MONTH">
+					Month of the year
+					<adruna31 type="1a31">
+						Day of the month
+						<adrMONTH type="MONTH">
+							Month of the year
+							<adruna2035 type="una2035">
+								Year
+								<cr method="unimplemented"></cr>
+							</adruna2035>
+						</adrMONTH>
+					</adruna31>
+				</adrMONTH>
+			</hh>
+		</set>
+	</clock>
+
+	<configure>
+		Enter configuration mode
+		<terminal>
+			Configure from the terminal
+			<cr method="Configterm"></cr>
+		</terminal>
+		<cr method="unimplemented"></cr>
+	</configure>
+	<connect>
+		Open a terminal connection
+		<adrWORD type="WORD">
+			IP address or hostname of a remote system
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+		<cr method="unimplemented"></cr>
+	</connect>
+
+	<copy>
+		Copy from one file to another
+		<flash>
+			Copy from flash: file system
+			<ftp>
+				Copy from ftp: file system
+				<cr method="unimplemented"></cr>
+			</ftp>
+			<running-config>
+				Update (merge with) current system configuration
+				<cr method="unimplemented"></cr>
+			</running-config>
+			<startup-config>
+				Copy to startup configuration
+				<cr method="unimplemented"></cr>
+			</startup-config>
+			<tftp>
+				Copy to tftp: file system
+				<cr method="unimplemented"></cr>
+			</tftp>
+		</flash>
+		<ftp>
+			Copy from current system configuration
+			<flash>
+				<cr method="unimplemented"></cr>
+			</flash>
+			<running-config>
+				Copy configuration from system
+				<cr method="unimplemented"></cr>
+			</running-config>
+			<startup-config>
+				Copy startup configuration from system
+				<cr method="unimplemented"></cr>
+			</startup-config>
+		</ftp>
+		<running-config>
+			Copy from startup configuration
+			<flash>
+				Copy to flash: file system
+				<cr method="unimplemented"></cr>
+			</flash>
+			<ftp>
+				Copy to current system configuration
+				<cr method="unimplemented"></cr>
+			</ftp>
+			<startup-config>
+				Copy to startup configuration
+				<cr method="unimplemented"></cr>
+			</startup-config>
+			<tftp>
+				Copy to current system configuration
+				<cr method="unimplemented"></cr>
+			</tftp>
+		</running-config>
+		<startup-config>
+			Copy from startup configuration
+			<flash>
+				Copy to flash file
+				<cr method="unimplemented"></cr>
+			</flash>
+			<ftp>
+				Update (merge with) current system configuration
+				<cr method="unimplemented"></cr>
+			</ftp>
+			<running-config>
+				Update (merge with) current system configuration
+				<cr method="unimplemented"></cr>
+			</running-config>
+			<tftp>
+				Update (merge with) current system configuration
+				<cr method="unimplemented"></cr>
+			</tftp>
+		</startup-config>
+		<tftp>
+			Copy from tftp: file system
+			<flash>
+				Copy to flash: file system
+				<cr method="unimplemented"></cr>
+			</flash>
+			<running-config>
+				Copy configuration from system
+				<cr method="unimplemented"></cr>
+			</running-config>
+			<startup-config>
+				Copy startup configuration from system
+				<cr method="unimplemented"></cr>
+			</startup-config>
+		</tftp>
+	</copy>
+
+	<debug>
+		Debugging functions (see also 'undebug')
+		<aaa>
+			AAA Authentication, Authorization and Accounting
+			<authentication>
+				Authentication
+				<cr method="unimplemented"></cr>
+			</authentication>
+		</aaa>
+		<crypto>
+			Cryptographic subsystem
+			<ipsec>
+				IPSEC processing
+				<cr method="unimplemented"></cr>
+			</ipsec>
+			<isakmp>
+				ISAKMP Key Management
+				<cr method="unimplemented"></cr>
+			</isakmp>
+		</crypto>
+		<customaqueue>
+			Custom output queueing
+			<cr method="unimplemented"></cr>
+		</customaqueue>
+		<eigrp>
+			EIGRP Protocol information
+			<fsm>
+				EIGRP Dual Finite State Machine events/actions
+				<cr method="unimplemented"></cr>
+			</fsm>
+			<packets>
+				EIGRP packets
+				<cr method="unimplemented"></cr>
+			</packets>
+		</eigrp>
+		<ephone>
+			ethernet phone skinny protocol
+			<rejistre>
+				Enable ephone registration debugging
+				<cr method="unimplemented"></cr>
+			</rejistre>
+		</ephone>
+		<frame-relay>
+			Frame Relay
+			<lmi>
+				LMI packet exchanges with service provider
+				<cr method="unimplemented"></cr>
+			</lmi>
+		</frame-relay>
+		<ip>
+			IP information
+			<icmp>
+				ICMP transactions
+				<cr method="unimplemented"></cr>
+			</icmp>
+			<inspect>
+				Stateful inspection events
+				<detailed>
+					Inspection Detailed Debug Records
+					<cr method="unimplemented"></cr>
+				</detailed>
+				<events>
+					Inspection events
+					<cr method="unimplemented"></cr>
+				</events>
+				<functionatrace>
+					Inspection function trace
+					<cr method="unimplemented"></cr>
+				</functionatrace>
+				<object-creation>
+					Inspection Object Creations
+					<cr method="unimplemented"></cr>
+				</object-creation>
+				<object-deletion>
+					Inspection Object Deletions
+					<cr method="unimplemented"></cr>
+				</object-deletion>
+				<protocol>
+					protocol-specific-debug
+					<udp>
+						Inspection UDP
+						<cr method="unimplemented"></cr>
+					</udp>
+					<tcp>
+						Inspection TCP
+						<cr method="unimplemented"></cr>
+					</tcp>
+					<icmp>
+						Inspection ICMP
+						<cr method="unimplemented"></cr>
+					</icmp>
+					<http>
+						Inspection HTTP
+						<cr method="unimplemented"></cr>
+					</http>
+				</protocol>
+				<timers>
+					Inspection Timer related events
+					<cr method="unimplemented"></cr>
+				</timers>
+			</inspect>
+			<nat>
+				NAT events
+				<cr method="unimplemented"></cr>
+			</nat>
+			<ospf>
+				OSPF information
+				<adj>
+					OSPF adjacency events
+					<cr method="unimplemented"></cr>
+				</adj>
+				<events>
+					OSPF events
+					<cr method="unimplemented"></cr>
+				</events>
+			</ospf>
+			<packet>
+				Packet information
+				<cr method="unimplemented"></cr>
+			</packet>
+			<rip>
+				RIP protocol transactions
+				<cr method="unimplemented"></cr>
+			</rip>
+			<routing>
+				Routing table events
+				<cr method="unimplemented"></cr>
+			</routing>
+		</ip>
+		<ipv6>
+			IPv6 information
+			<ospf>
+				OSPF information
+				<adj>
+					OSPF adjacency events
+					<cr method="unimplemented"></cr>
+				</adj>
+				<events>
+					OSPF events
+					<cr method="unimplemented"></cr>
+				</events>
+			</ospf>
+		</ipv6>
+		<ntp>
+			NTP information
+			<packets>
+				NTP packets
+				<cr method="unimplemented"></cr>
+			</packets>
+		</ntp>
+		<ppp>
+			PPP (Point to Point Protocol) information
+			<authentication>
+				CHAP and PAP authentication
+				<cr method="unimplemented"></cr>
+			</authentication>
+			<negotiation>
+				Protocol parameter negotiation
+				<cr method="unimplemented"></cr>
+			</negotiation>
+			<packet>
+				Low-level PPP packet dump
+				<cr method="unimplemented"></cr>
+			</packet>
+		</ppp>
+	</debug>
+
+	<delete>
+		Delete a file
+		<adrWORD type="WORD">
+			File to be deleted
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+		<flash>
+			File to be deleted
+			<cr method="unimplemented"></cr>
+		</flash>
+	</delete>
+
+
+
+
+
+
+	<dir>
+		List files on a filesystem
+		<adrWORD type="WORD">
+			Directory or file name
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+		<flash>
+			Directory or file name
+			<cr method="unimplemented"></cr>
+		</flash>
+		<nvram>
+			Directory or file name
+			<cr method="unimplemented"></cr>
+		</nvram>
+		<cr method="unimplemented"></cr>
+	</dir>
+	<disable>
+		Turn off privileged commands
+		<cr method="disable"></cr>
+	</disable>
+	<disconnect>
+		Disconnect an existing network connection
+		<adr1a16 type="1a16">
+			The number of an active network connection
+			<cr method="unimplemented"></cr>
+		</adr1a16>
+	</disconnect>
+	<enable>
+		Turn on privileged commands
+		<adr0a15 type="0a15">
+			Enable level
+			<cr method="unimplemented"></cr>
+		</adr0a15>
+		<view>
+			Set into the existing view
+			<adrWORD type="WORD">
+				View Name
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+			<cr method="unimplemented"></cr>
+		</view>
+		<cr method="unimplemented"></cr>
+	</enable>
+	<erase>
+		Erase a filesystem
+		<startup-config>
+			Erase contents of configuration memory
+			<cr method="unimplemented"></cr>
+		</startup-config>
+	</erase>
+	<exit>
+		Exit from the EXEC
+		<cr method="exitFromprivilegedMode"></cr>
+	</exit>
+	<logout>
+		Exit from the EXEC
+		<cr method="unimplemented"></cr>
+	</logout>
+	<mkdir>
+		Create new directory
+		<adrWORD type="WORD">
+			Directory name
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+		<flash>
+			Directory name
+			<cr method="unimplemented"></cr>
+		</flash>
+		<cr method="unimplemented"></cr>
+	</mkdir>
+	<more>
+		Display the contents of a file
+		<flash>
+			File to display
+			<cr method="unimplemented"></cr>
+		</flash>
+	</more>
+	<no>
+		Disable debugging informations
+		<debug>
+			Debugging functions (see also 'undebug')
+			<aaa>
+				AAA Authentication, Authorization and Accounting
+				<authentication>
+					<cr method="unimplemented"></cr>
+				</authentication>
+			</aaa>
+			<all>
+				Enable all debugging
+				<cr method="unimplemented"></cr>
+			</all>
+			<crypto>
+				Cryptographic subsystem
+				<ipsec>
+					IPSEC processing
+					<cr method="unimplemented"></cr>
+				</ipsec>
+				<isakmp>
+					ISAKMP Key Management
+					<cr method="unimplemented"></cr>
+				</isakmp>
+			</crypto>
+			<customaqueue>
+				Custom output queueing
+				<cr method="unimplemented"></cr>
+			</customaqueue>
+			<eigrp>
+				EIGRP Protocol information
+				<fsm>
+					EIGRP Dual Finite State Machine events/actions
+					<cr method="unimplemented"></cr>
+				</fsm>
+				<packets>
+					EIGRP packets
+					<cr method="unimplemented"></cr>
+				</packets>
+			</eigrp>
+			<ephone>
+				ethernet phone skinny protocol
+				<rejistre>
+					Enable ephone registration debugging
+					<cr method="unimplemented"></cr>
+				</rejistre>
+			</ephone>
+			<frame-relay>
+				Frame Relay
+				<lmi>
+					LMI packet exchanges with service provider
+					<cr method="unimplemented"></cr>
+				</lmi>
+			</frame-relay>
+			<ppp>
+				PPP (Point to Point Protocol) information
+				<authentication>
+					CHAP and PAP authentication
+					<cr method="unimplemented"></cr>
+				</authentication>
+				<negotiation>
+					Protocol parameter negotiation
+					<cr method="unimplemented"></cr>
+				</negotiation>
+				<packet>
+					Low-level PPP packet dump
+					<cr method="unimplemented"></cr>
+				</packet>
+			</ppp>
+			<ipv6>
+				IPv6 information
+				<ospf>
+					OSPF information
+					<adj>
+						OSPF adjacency events
+						<cr method="unimplemented"></cr>
+					</adj>
+					<events>
+						OSPF events
+						<cr method="unimplemented"></cr>
+					</events>
+				</ospf>
+			</ipv6>
+			<ntp>
+				NTP information
+				<packets>
+					NTP packets
+					<cr method="unimplemented"></cr>
+				</packets>
+			</ntp>
+			<ip>
+				IP information
+				<icmp>
+					ICMP transactions
+					<cr method="unimplemented"></cr>
+				</icmp>
+				<nat>
+					NAT events
+					<cr method="unimplemented"></cr>
+				</nat>
+				<ospf>
+					OSPF information
+					<adj>
+						OSPF adjacency events
+						<cr method="unimplemented"></cr>
+					</adj>
+					<events>
+						OSPF events
+						<cr method="unimplemented"></cr>
+					</events>
+				</ospf>
+				<packet>
+					Packet information
+					<cr method="unimplemented"></cr>
+				</packet>
+				<rip>
+					RIP protocol transactions
+					<cr method="unimplemented"></cr>
+				</rip>
+				<routing>
+					Routing table events
+					<cr method="unimplemented"></cr>
+				</routing>
+				<inspect>
+					Stateful inspection events
+					<detailed>
+						Inspection Detailed Debug Records
+						<cr method="unimplemented"></cr>
+					</detailed>
+					<events>
+						Inspection events
+						<cr method="unimplemented"></cr>
+					</events>
+					<function-trace>
+						Inspection function trace
+						<cr method="unimplemented"></cr>
+					</function-trace>
+					<object-creation>
+						Inspection Object Creations
+						<cr method="unimplemented"></cr>
+					</object-creation>
+					<object-deletion>
+						Inspection Object Deletions
+						<cr method="unimplemented"></cr>
+					</object-deletion>
+					<protocol>
+						protocol-specific-debug
+
+						<http>
+							Inspection HTTP
+							<cr method="unimplemented"></cr>
+						</http>
+						<icmp>
+							Inspection ICMP
+							<cr method="unimplemented"></cr>
+						</icmp>
+						<tcp>
+							Inspection TCP
+							<cr method="unimplemented"></cr>
+						</tcp>
+						<udp>
+							Inspection UDP
+							<cr method="unimplemented"></cr>
+						</udp>
+					</protocol>
+					<timers>
+						Inspection Timer related events
+						<cr method="unimplemented"></cr>
+					</timers>
+				</inspect>
+			</ip>
+		</debug>
+	</no>
+
+	<ping>
+		Send echo messages
+		<adrWORD type="WORD">
+			Ping destination address or hostname
+			<cr method="ping"></cr>
+		</adrWORD>
+		<cr method="unimplemented"></cr>
+	</ping>
+
+	<reload>
+		Halt and perform a cold restart
+		<cr method="unimplemented"></cr>
+	</reload>
+
+	<resume>
+		Resume an active network connection
+		<adr1a16 type="1a16">
+			The number of an active network connection
+			<cr method="unimplemented"></cr>
+		</adr1a16>
+		<adrWORD type="WORD">
+			The name of an active network connection or Connection options
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+		<cr method="unimplemented"></cr>
+	</resume>
+
+	<rmdir>
+		Remove existing directory
+		<adrWORD type="WORD">
+			Directory name
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+		<flash>
+			Directory name
+			<cr method="unimplemented"></cr>
+		</flash>
+		<cr method="unimplemented"></cr>
+	</rmdir>
+
+	<setup>
+		Run the SETUP command facility
+		<cr method="unimplemented"></cr>
+	</setup>
+
+
+
+
+	<show>
+		Show running system information
+		<aaa>
+			Show AAA values
+			<local>
+				Show AAA local method options
+				<user>
+					AAA Local user
+					<lockout>
+						AAA Local locked-out user
+						<cr method="unimplemented"></cr>
+					</lockout>
+				</user>
+			</local>
+			<sessions>
+				Show AAA sessions as seen by AAA Session MIB
+				<cr method="unimplemented"></cr>
+			</sessions>
+			<user>
+				Show users active in AAA subsystem
+				<adruna4294967295 type="una4294967295">
+					Unique Id for a single user
+					<adruna4294967295 type="una4294967295">
+						<cr method="unimplemented"></cr>
+					</adruna4294967295>
+				</adruna4294967295>
+				<all>
+					Show users active in AAA subsystem
+					<cr method="unimplemented"></cr>
+				</all>
+			</user>
+		</aaa>
+
+		<access-lists>
+			List access lists
+			<adruna199 type="una199">
+				ACL number
+				<cr method="unimplemented"></cr>
+			</adruna199>
+			<adrWORD type="WORD">
+				ACL name
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+			<cr method="unimplemented"></cr>
+		</access-lists>
+
+		<arp>
+			Arp table
+			<cr method="showArp"></cr>
+		</arp>
+
+		<cdp>
+			CDP information
+			<entry>
+				Information for specific neighbor entry
+				<adrWORD type="WORD">
+					Name of CDP neighbor entry
+					<protocol>
+						Protocol information
+						<cr method="unimplemented"></cr>
+					</protocol>
+					<versions>
+						Version information
+						<cr method="unimplemented"></cr>
+					</versions>
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+
+				<protocol>
+					Protocol information
+					<cr method="unimplemented"></cr>
+				</protocol>
+				<versions>
+					Version information
+					<cr method="unimplemented"></cr>
+				</versions>
+				<cr method="unimplemented"></cr>
+
+			</entry>
+			<interface>
+				CDP interface status and configuration
+				<Ethernet>
+					IEEE 802.3
+					<adrzeroa9 type="zeroa9">
+						Ethernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</Ethernet>
+				<FastEthernet>
+					FastEthernet IEEE 802.3
+					<adrzeroa9 type="zeroa9">
+						FastEthernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</FastEthernet>
+				<GigabitEthernet>
+					GigabitEthernet IEEE 802.3z
+					<adrzeroa9 type="zeroa9">
+						GigabitEthernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</GigabitEthernet>
+				<serial>
+					Serial
+					<adrzeroa9 type="zeroa9">
+						Serial interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</serial>
+				<cr method="unimplemented"></cr>
+			</interface>
+			<neighbors>
+				CDP neighbor entries
+				<detail>
+					Show detailed information
+					<cr method="unimplemented"></cr>
+				</detail>
+				<cr method="unimplemented"></cr>
+			</neighbors>
+		</cdp>
+
+		<class-map>
+			Show QoS Class Map
+			<adrWORD type="WORD">
+				class-map name
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+			<cr method="unimplemented"></cr>
+		</class-map>
+
+		<clock>
+			Display the system clock
+			<cr method="unimplemented"></cr>
+		</clock>
+
+		<controllers>
+			Interface controllers status
+			<Ethernet>
+				IEEE 802.3
+				<adrzeroa9 type="zeroa9">
+					Ethernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</Ethernet>
+			<FastEthernet>
+				FastEthernet IEEE 802.3
+				<adrzeroa9 type="zeroa9">
+					FastEthernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</FastEthernet>
+			<GigabitEthernet>
+				GigabitEthernet IEEE 802.3z
+				<adrzeroa9 type="zeroa9">
+					GigabitEthernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</GigabitEthernet>
+			<serial>
+				Serial
+				<adrzeroa9 type="zeroa9">
+					Serial interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</serial>
+			<cr method="unimplemented"></cr>
+		</controllers>
+
+		<crypto>
+			Encryption module
+			<key>
+				Show long term public keys
+				<mypubkey>
+					Show public keys associated with this router
+					<rsa>
+						Show RSA public keys
+						<cr method="unimplemented"></cr>
+					</rsa>
+				</mypubkey>
+			</key>
+		</crypto>
+
+		<debugging>
+			State of each debugging option
+			<cr method="unimplemented"></cr>
+		</debugging>
+
+		<dhcp>
+			Dynamic Host Configuration Protocol status
+			<lease>
+				Show DHCP Addresses leased from a server
+				<cr method="unimplemented"></cr>
+			</lease>
+		</dhcp>
+
+		<file>
+			Show filesystem information
+			<systems>
+				List filesystems
+				<cr method="unimplemented"></cr>
+			</systems>
+		</file>
+
+		<flash>
+			display information about flash: file system
+			<cr method="unimplemented"></cr>
+		</flash>
+
+		<frame-relay>
+			Frame-Relay information
+			<map>
+				Frame-Relay map table
+				<cr method="unimplemented"></cr>
+			</map>
+			<lmi>
+				show frame relay lmi statistics
+				<cr method="unimplemented"></cr>
+			</lmi>
+			<pvc>
+				show frame relay pvc statistics
+				<adrseizea1022 type="seizea1022">
+					DLCI
+					<cr method="unimplemented"></cr>
+				</adrseizea1022>
+				<interface>
+					show frame relay information on one interface
+					<serial>
+						Serial
+						<adrzeroa9 type="zeroa9">
+							Serial interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</serial>
+				</interface>
+				<cr method="unimplemented"></cr>
+			</pvc>
+		</frame-relay>
+
+		<history>
+			Display the session command history
+			<cr method="unimplemented"></cr>
+		</history>
+
+		<hosts>
+			IP domain-name, lookup style, nameservers, and host table
+			<cr method="unimplemented"></cr>
+		</hosts>
+
+		<interface>
+			Interface status and configuration
+			<Ethernet>
+				IEEE 802.3
+				<adrzeroa9 type="zeroa9">
+					Ethernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</Ethernet>
+			<FastEthernet>
+				FastEthernet IEEE 802.3
+				<adrzeroa9 type="zeroa9">
+					FastEthernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</FastEthernet>
+			<GigabitEthernet>
+				GigabitEthernet IEEE 802.3z
+				<adrzeroa9 type="zeroa9">
+					GigabitEthernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</GigabitEthernet>
+			<loopback>
+				Loopback interface
+				<adrzeroa2147483647 type="zeroa2147483647">
+					Loopback interface number
+
+					<cr method="unimplemented"></cr>
+				</adrzeroa2147483647>
+			</loopback>
+			<serial>
+				Serial
+				<adrzeroa9 type="zeroa9">
+					Serial interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</serial>
+			<tunnel>
+				Tunnel interface
+				<adrzeroa2147483647 type="zeroa2147483647">
+					Tunnel interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa2147483647>
+			</tunnel>
+			<virtual-access>
+				Virtual Access interface
+				<adruna2 type="una2">
+					Virtual-Access interface number
+					<cr method="unimplemented"></cr>
+				</adruna2>
+			</virtual-access>
+			<virtual-template>
+				Virtual Template interface
+				<adruna200 type="una200">
+					Virtual-Template interface number
+					<cr method="unimplemented"></cr>
+				</adruna200>
+			</virtual-template>
+
+		</interface>
+
+		<privilege>
+			Show current privilege level
+			<cr method="unimplemented"></cr>
+		</privilege>
+
+		<protocols>
+			Active process statistics
+			<cr method="unimplemented"></cr>
+		</protocols>
+
+		<queue>
+			Show queue contents
+			<Ethernet>
+				IEEE 802.3
+				<adrzeroa9 type="zeroa9">
+					Ethernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</Ethernet>
+			<FastEthernet>
+				FastEthernet IEEE 802.3
+				<adrzeroa9 type="zeroa9">
+					FastEthernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</FastEthernet>
+			<GigabitEthernet>
+				GigabitEthernet IEEE 802.3z
+				<adrzeroa9 type="zeroa9">
+					GigabitEthernet interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</GigabitEthernet>
+			<serial>
+				Serial
+				<adrzeroa9 type="zeroa9">
+					Serial interface number
+					<cr method="unimplemented"></cr>
+				</adrzeroa9>
+			</serial>
+		</queue>
+
+		<queueing>
+			Show queueing configuration
+			<cr method="unimplemented"></cr>
+		</queueing>
+
+		<sessions>
+			Information about Telnet connections
+			<cr method="unimplemented"></cr>
+		</sessions>
+
+		<ssh>
+			Status of SSH server connections
+			<cr method="unimplemented"></cr>
+		</ssh>
+
+		<terminal>
+			Display terminal configuration parameters
+			<cr method="unimplemented"></cr>
+		</terminal>
+
+		<users>
+			Display information about terminal lines
+			<cr method="unimplemented"></cr>
+		</users>
+
+		<version>
+			System hardware and software status
+			<cr method="unimplemented"></cr>
+		</version>
+		<policy-map>
+			Show QoS Policy Map
+			<adrWORD type="WORD">
+				policy-map name
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+			<interface>
+				Show Qos Policy Interface
+				<Ethernet>
+					IEEE 802.3
+					<adrzeroa9 type="zeroa9">
+						Ethernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</Ethernet>
+				<FastEthernet>
+					FastEthernet IEEE 802.3
+					<adrzeroa9 type="zeroa9">
+						FastEthernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</FastEthernet>
+				<GigabitEthernet>
+					GigabitEthernet IEEE 802.3z
+					<adrzeroa9 type="zeroa9">
+						GigabitEthernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</GigabitEthernet>
+				<serial>
+					Serial
+					<adrzeroa9 type="zeroa9">
+						Serial interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</serial>
+			</interface>
+			<cr method="unimplemented"></cr>
+		</policy-map>
+
+		<ip>
+			<accessalists>
+				List access lists
+				<adruna199 type="una199">
+					ACL number
+					<cr method="unimplemented"></cr>
+				</adruna199>
+				<adrWORD type="WORD">
+					ACL name
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+				<cr method="unimplemented"></cr>
+			</accessalists>
+			<arp>
+				IP ARP table
+				<cr method="unimplemented"></cr>
+			</arp>
+			<bgp>
+				BGP information
+				<summary>
+					Summary of BGP neighbor status
+					<cr method="unimplemented"></cr>
+				</summary>
+				<neighbors>
+					Detailed information on TCP and BGP neighbor connections
+					<cr method="unimplemented"></cr>
+				</neighbors>
+				<cr method="unimplemented"></cr>
+			</bgp>
+			<dhcp>
+				Show items in the DHCP database
+				<binding>
+					DHCP address bindings
+					<cr method="unimplemented"></cr>
+				</binding>
+			</dhcp>
+			<eigrp>
+				IP-EIGRP show commands
+				<interface>
+					IP-EIGRP interfaces
+					<adruna65535 type="una65535 ">
+						AS Number
+						<cr method="unimplemented"></cr>
+					</adruna65535>
+				</interface>
+				<neighbors>
+					IP-EIGRP neighbors
+					<adruna65535 type="una65535 ">
+						AS Number
+						<cr method="unimplemented"></cr>
+					</adruna65535>
+					<cr method="unimplemented"></cr>
+				</neighbors>
+				<topology>
+					IP-EIGRP Topology Table
+					<adruna65535 type="una65535 ">
+						AS Number
+						<adrABCD type="ABCD ">
+							Network to display information about
+							<adrABCD type="ABCD ">
+								Network mask
+								<cr method="unimplemented"></cr>
+							</adrABCD>
+							<cr method="unimplemented"></cr>
+						</adrABCD>
+						<cr method="unimplemented"></cr>
+					</adruna65535>
+					<adrABCD type="ABCD ">
+						Network to display information about
+						<adrABCD type="ABCD ">
+							Network mask
+							<cr method="unimplemented"></cr>
+						</adrABCD>
+						<cr method="unimplemented"></cr>
+					</adrABCD>
+					<allalinks>
+						Show all links in topology table
+						<cr method="unimplemented"></cr>
+					</allalinks>
+					<cr method="unimplemented"></cr>
+				</topology>
+				<traffic>
+					IP-EIGRP Traffic Statistics
+					<adruna65535 type="una65535 ">
+						AS Number
+						<cr method="unimplemented"></cr>
+					</adruna65535>
+					<cr method="unimplemented"></cr>
+				</traffic>
+			</eigrp>
+			<interface>
+				IP interface status and configuration
+				<Ethernet>
+					IEEE 802.3
+					<adrzeroa9 type="zeroa9">
+						Ethernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</Ethernet>
+				<FastEthernet>
+					FastEthernet IEEE 802.3
+					<adrzeroa9 type="zeroa9">
+						FastEthernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</FastEthernet>
+				<GigabitEthernet>
+					GigabitEthernet IEEE 802.3z
+					<adrzeroa9 type="zeroa9">
+						GigabitEthernet interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</GigabitEthernet>
+				<loopback>
+					Loopback interface
+					<adrzeroa2147483647 type="zeroa2147483647">
+						Loopback interface number
+
+						<cr method="unimplemented"></cr>
+					</adrzeroa2147483647>
+				</loopback>
+				<serial>
+					Serial
+					<adrzeroa9 type="zeroa9">
+						Serial interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa9>
+				</serial>
+				<tunnel>
+					Tunnel interface
+					<adrzeroa2147483647 type="zeroa2147483647">
+						Tunnel interface number
+						<cr method="unimplemented"></cr>
+					</adrzeroa2147483647>
+				</tunnel>
+				<virtual-access>
+					Virtual Access interface
+					<adruna2 type="una2">
+						Virtual-Access interface number
+						<cr method="unimplemented"></cr>
+					</adruna2>
+				</virtual-access>
+				<virtual-template>
+					Virtual Template interface
+					<adruna200 type="una200">
+						Virtual-Template interface number
+						<cr method="unimplemented"></cr>
+					</adruna200>
+				</virtual-template>
+				<brief>
+					Brief summary of IP status and configuration
+					<cr method="unimplemented"></cr>
+				</brief>
+				<cr method="unimplemented"></cr>
+			</interface>
+
+
+			<nat>
+				IP NAT information
+				<statistics>
+					Translation statistics
+					<cr method="unimplemented"></cr>
+				</statistics>
+				<translations>
+					Translation entries
+					<cr method="unimplemented"></cr>
+				</translations>
+			</nat>
+			<nbar>
+				Network-Based Application Recognition
+				<port-map>
+					Show StILE Protocol Port Map
+					<cr method="unimplemented"></cr>
+				</port-map>
+			</nbar>
+			<ospf>
+				OSPF information
+				<adruna65535 type="una65535">
+					Process ID number
+					<adrzeroa4294967295 type="zeroa4294967295">
+						OSPF area ID as a decimal number
+						<database>
+							Database summary
+							<cr method="unimplemented"></cr>
+						</database>
+						<interface>
+							Interface information
+							<Ethernet>
+								IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									Ethernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</Ethernet>
+							<FastEthernet>
+								FastEthernet IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									FastEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</FastEthernet>
+							<GigabitEthernet>
+								GigabitEthernet IEEE 802.3z
+								<adrzeroa9 type="zeroa9">
+									GigabitEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</GigabitEthernet>
+							<loopback>
+								Loopback interface
+								<adrzeroa2147483647 type="zeroa2147483647">
+									Loopback interface number
+
+									<cr method="unimplemented"></cr>
+								</adrzeroa2147483647>
+							</loopback>
+							<serial>
+								Serial
+								<adrzeroa9 type="zeroa9">
+									Serial interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</serial>
+							<cr method="unimplemented"></cr>
+						</interface>
+						<neighbors>
+							Neighbor list
+							<Ethernet>
+								IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									Ethernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</Ethernet>
+							<FastEthernet>
+								FastEthernet IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									FastEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</FastEthernet>
+							<GigabitEthernet>
+								GigabitEthernet IEEE 802.3z
+								<adrzeroa9 type="zeroa9">
+									GigabitEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</GigabitEthernet>
+							<loopback>
+								Loopback interface
+								<adrzeroa2147483647 type="zeroa2147483647">
+									Loopback interface number
+
+									<cr method="unimplemented"></cr>
+								</adrzeroa2147483647>
+							</loopback>
+							<serial>
+								Serial
+								<adrzeroa9 type="zeroa9">
+									Serial interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</serial>
+							<detail>
+								detail of all neighbors
+								<Ethernet>
+									IEEE 802.3
+									<adrzeroa9 type="zeroa9">
+										Ethernet interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</Ethernet>
+								<FastEthernet>
+									FastEthernet IEEE 802.3
+									<adrzeroa9 type="zeroa9">
+										FastEthernet interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</FastEthernet>
+								<GigabitEthernet>
+									GigabitEthernet IEEE 802.3z
+									<adrzeroa9 type="zeroa9">
+										GigabitEthernet interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</GigabitEthernet>
+								<loopback>
+									Loopback interface
+									<adrzeroa2147483647 type="zeroa2147483647">
+										Loopback interface number
+
+										<cr method="unimplemented"></cr>
+									</adrzeroa2147483647>
+								</loopback>
+								<serial>
+									Serial
+									<adrzeroa9 type="zeroa9">
+										Serial interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</serial>
+								<cr method="unimplemented"></cr>
+							</detail>
+						</neighbors>
+						<virtualalinks>
+							Virtual link information
+							<cr method="unimplemented"></cr>
+						</virtualalinks>
+					</adrzeroa4294967295>
+
+
+					<adrABCD type="ABCD ">
+						OSPF area ID in IP address format
+						<database>
+							Database summary
+							<cr method="unimplemented"></cr>
+						</database>
+						<interface>
+							Interface information
+							<Ethernet>
+								IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									Ethernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</Ethernet>
+							<FastEthernet>
+								FastEthernet IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									FastEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</FastEthernet>
+							<GigabitEthernet>
+								GigabitEthernet IEEE 802.3z
+								<adrzeroa9 type="zeroa9">
+									GigabitEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</GigabitEthernet>
+							<loopback>
+								Loopback interface
+								<adrzeroa2147483647 type="zeroa2147483647">
+									Loopback interface number
+
+									<cr method="unimplemented"></cr>
+								</adrzeroa2147483647>
+							</loopback>
+							<serial>
+								Serial
+								<adrzeroa9 type="zeroa9">
+									Serial interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</serial>
+							<cr method="unimplemented"></cr>
+						</interface>
+						<neighbors>
+							Neighbor list
+							<Ethernet>
+								IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									Ethernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</Ethernet>
+							<FastEthernet>
+								FastEthernet IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									FastEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</FastEthernet>
+							<GigabitEthernet>
+								GigabitEthernet IEEE 802.3z
+								<adrzeroa9 type="zeroa9">
+									GigabitEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</GigabitEthernet>
+							<loopback>
+								Loopback interface
+								<adrzeroa2147483647 type="zeroa2147483647">
+									Loopback interface number
+
+									<cr method="unimplemented"></cr>
+								</adrzeroa2147483647>
+							</loopback>
+							<serial>
+								Serial
+								<adrzeroa9 type="zeroa9">
+									Serial interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</serial>
+							<detail>
+								detail of all neighbors
+								<Ethernet>
+									IEEE 802.3
+									<adrzeroa9 type="zeroa9">
+										Ethernet interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</Ethernet>
+								<FastEthernet>
+									FastEthernet IEEE 802.3
+									<adrzeroa9 type="zeroa9">
+										FastEthernet interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</FastEthernet>
+								<GigabitEthernet>
+									GigabitEthernet IEEE 802.3z
+									<adrzeroa9 type="zeroa9">
+										GigabitEthernet interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</GigabitEthernet>
+								<loopback>
+									Loopback interface
+									<adrzeroa2147483647 type="zeroa2147483647">
+										Loopback interface number
+
+										<cr method="unimplemented"></cr>
+									</adrzeroa2147483647>
+								</loopback>
+								<serial>
+									Serial
+									<adrzeroa9 type="zeroa9">
+										Serial interface number
+										<cr method="unimplemented"></cr>
+									</adrzeroa9>
+								</serial>
+								<cr method="unimplemented"></cr>
+							</detail>
+						</neighbors>
+						<virtual-links>
+							Virtual link information
+							<cr method="unimplemented"></cr>
+						</virtual-links>
+					</adrABCD>
+
+					<border-routers>
+						Border and Boundary Router Information
+						<cr method="unimplemented"></cr>
+					</border-routers>
+					<database>
+						Database summary
+						<cr method="unimplemented"></cr>
+					</database>
+					<interface>
+						Interface information
+						<Ethernet>
+							IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								Ethernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</Ethernet>
+						<FastEthernet>
+							FastEthernet IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								FastEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</FastEthernet>
+						<GigabitEthernet>
+							GigabitEthernet IEEE 802.3z
+							<adrzeroa9 type="zeroa9">
+								GigabitEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</GigabitEthernet>
+						<loopback>
+							Loopback interface
+							<adrzeroa2147483647 type="zeroa2147483647">
+								Loopback interface number
+
+								<cr method="unimplemented"></cr>
+							</adrzeroa2147483647>
+						</loopback>
+						<serial>
+							Serial
+							<adrzeroa9 type="zeroa9">
+								Serial interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</serial>
+						<cr method="unimplemented"></cr>
+					</interface>
+					<neighbors>
+						Neighbor list
+						<Ethernet>
+							IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								Ethernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</Ethernet>
+						<FastEthernet>
+							FastEthernet IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								FastEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</FastEthernet>
+						<GigabitEthernet>
+							GigabitEthernet IEEE 802.3z
+							<adrzeroa9 type="zeroa9">
+								GigabitEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</GigabitEthernet>
+						<loopback>
+							Loopback interface
+							<adrzeroa2147483647 type="zeroa2147483647">
+								Loopback interface number
+
+								<cr method="unimplemented"></cr>
+							</adrzeroa2147483647>
+						</loopback>
+						<serial>
+							Serial
+							<adrzeroa9 type="zeroa9">
+								Serial interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</serial>
+						<detail>
+							detail of all neighbors
+							<Ethernet>
+								IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									Ethernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</Ethernet>
+							<FastEthernet>
+								FastEthernet IEEE 802.3
+								<adrzeroa9 type="zeroa9">
+									FastEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</FastEthernet>
+							<GigabitEthernet>
+								GigabitEthernet IEEE 802.3z
+								<adrzeroa9 type="zeroa9">
+									GigabitEthernet interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</GigabitEthernet>
+							<loopback>
+								Loopback interface
+								<adrzeroa2147483647 type="zeroa2147483647">
+									Loopback interface number
+
+									<cr method="unimplemented"></cr>
+								</adrzeroa2147483647>
+							</loopback>
+							<serial>
+								Serial
+								<adrzeroa9 type="zeroa9">
+									Serial interface number
+									<cr method="unimplemented"></cr>
+								</adrzeroa9>
+							</serial>
+							<cr method="unimplemented"></cr>
+						</detail>
+					</neighbors>
+					<virtual-links>
+						Virtual link information
+						<cr method="unimplemented"></cr>
+					</virtual-links>
+					<cr method="unimplemented"></cr>
+				</adruna65535>
+
+				<border-routers>
+					Border and Boundary Router Information
+					<cr method="unimplemented"></cr>
+				</border-routers>
+				<database>
+					Database summary
+					<cr method="unimplemented"></cr>
+				</database>
+				<interface>
+					Interface information
+					<Ethernet>
+						IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							Ethernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</Ethernet>
+					<FastEthernet>
+						FastEthernet IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							FastEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</FastEthernet>
+					<GigabitEthernet>
+						GigabitEthernet IEEE 802.3z
+						<adrzeroa9 type="zeroa9">
+							GigabitEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</GigabitEthernet>
+					<loopback>
+						Loopback interface
+						<adrzeroa2147483647 type="zeroa2147483647">
+							Loopback interface number
+
+							<cr method="unimplemented"></cr>
+						</adrzeroa2147483647>
+					</loopback>
+					<serial>
+						Serial
+						<adrzeroa9 type="zeroa9">
+							Serial interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</serial>
+					<cr method="unimplemented"></cr>
+				</interface>
+				<neighbors>
+					Neighbor list
+					<Ethernet>
+						IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							Ethernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</Ethernet>
+					<FastEthernet>
+						FastEthernet IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							FastEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</FastEthernet>
+					<GigabitEthernet>
+						GigabitEthernet IEEE 802.3z
+						<adrzeroa9 type="zeroa9">
+							GigabitEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</GigabitEthernet>
+					<loopback>
+						Loopback interface
+						<adrzeroa2147483647 type="zeroa2147483647">
+							Loopback interface number
+
+							<cr method="unimplemented"></cr>
+						</adrzeroa2147483647>
+					</loopback>
+					<serial>
+						Serial
+						<adrzeroa9 type="zeroa9">
+							Serial interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</serial>
+					<detail>
+						detail of all neighbors
+						<Ethernet>
+							IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								Ethernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</Ethernet>
+						<FastEthernet>
+							FastEthernet IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								FastEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</FastEthernet>
+						<GigabitEthernet>
+							GigabitEthernet IEEE 802.3z
+							<adrzeroa9 type="zeroa9">
+								GigabitEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</GigabitEthernet>
+						<loopback>
+							Loopback interface
+							<adrzeroa2147483647 type="zeroa2147483647">
+								Loopback interface number
+
+								<cr method="unimplemented"></cr>
+							</adrzeroa2147483647>
+						</loopback>
+						<serial>
+							Serial
+							<adrzeroa9 type="zeroa9">
+								Serial interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</serial>
+						<cr method="unimplemented"></cr>
+					</detail>
+				</neighbors>
+				<virtual-links>
+					Virtual link information
+					<cr method="unimplemented"></cr>
+				</virtual-links>
+
+
+				<border-routers>
+					Border and Boundary Router Information
+					<cr method="unimplemented"></cr>
+				</border-routers>
+				<database>
+					Database summary
+					<cr method="unimplemented"></cr>
+				</database>
+				<interface>
+					Interface information
+					<Ethernet>
+						IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							Ethernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</Ethernet>
+					<FastEthernet>
+						FastEthernet IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							FastEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</FastEthernet>
+					<GigabitEthernet>
+						GigabitEthernet IEEE 802.3z
+						<adrzeroa9 type="zeroa9">
+							GigabitEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</GigabitEthernet>
+					<loopback>
+						Loopback interface
+						<adrzeroa2147483647 type="zeroa2147483647">
+							Loopback interface number
+
+							<cr method="unimplemented"></cr>
+						</adrzeroa2147483647>
+					</loopback>
+					<serial>
+						Serial
+						<adrzeroa9 type="zeroa9">
+							Serial interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</serial>
+					<cr method="unimplemented"></cr>
+				</interface>
+				<neighbors>
+					Neighbor list
+					<Ethernet>
+						IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							Ethernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</Ethernet>
+					<FastEthernet>
+						FastEthernet IEEE 802.3
+						<adrzeroa9 type="zeroa9">
+							FastEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</FastEthernet>
+					<GigabitEthernet>
+						GigabitEthernet IEEE 802.3z
+						<adrzeroa9 type="zeroa9">
+							GigabitEthernet interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</GigabitEthernet>
+					<loopback>
+						Loopback interface
+						<adrzeroa2147483647 type="zeroa2147483647">
+							Loopback interface number
+
+							<cr method="unimplemented"></cr>
+						</adrzeroa2147483647>
+					</loopback>
+					<serial>
+						Serial
+						<adrzeroa9 type="zeroa9">
+							Serial interface number
+							<cr method="unimplemented"></cr>
+						</adrzeroa9>
+					</serial>
+					<detail>
+						detail of all neighbors
+						<Ethernet>
+							IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								Ethernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</Ethernet>
+						<FastEthernet>
+							FastEthernet IEEE 802.3
+							<adrzeroa9 type="zeroa9">
+								FastEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</FastEthernet>
+						<GigabitEthernet>
+							GigabitEthernet IEEE 802.3z
+							<adrzeroa9 type="zeroa9">
+								GigabitEthernet interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</GigabitEthernet>
+						<loopback>
+							Loopback interface
+							<adrzeroa2147483647 type="zeroa2147483647">
+								Loopback interface number
+
+								<cr method="unimplemented"></cr>
+							</adrzeroa2147483647>
+						</loopback>
+						<serial>
+							Serial
+							<adrzeroa9 type="zeroa9">
+								Serial interface number
+								<cr method="unimplemented"></cr>
+							</adrzeroa9>
+						</serial>
+						<cr method="unimplemented"></cr>
+					</detail>
+				</neighbors>
+				<virtual-links>
+					Virtual link information
+					<cr method="unimplemented"></cr>
+				</virtual-links>
+				<cr method="unimplemented"></cr>
+			</ospf>
+
+			<protocols>
+				IP routing protocol process parameters and statistics
+				<cr method="unimplemented"></cr>
+			</protocols>
+			<rip>
+				IP RIP show commands
+				<database>
+					IP RIP database
+					<cr method="unimplemented"></cr>
+				</database>
+			</rip>
+			<route>
+				IP routing table
+				<adrWORD type="WORD">
+					Network to display information about or hostname
+					<cr method="showStaticRoute"></cr>
+				</adrWORD>
+				<bgp>
+					Border Gateway Protocol (BGP)
+					<cr method="unimplemented"></cr>
+				</bgp>
+				<connected>
+					Connected
+					<cr method="unimplemented"></cr>
+				</connected>
+				<eigrp>
+					Enhanced Interior Routing Protocol (EIGRP)
+					<cr method="unimplemented"></cr>
+				</eigrp>
+				<rip>
+					Routing Information Protocol (RIP)
+					<cr method="unimplemented"></cr>
+				</rip>
+				<static>
+					Static routes
+					<cr method="showStaticRoute"></cr>
+				</static>
+				<cr method="showStaticRoute"></cr>
+			</route>
+			<ssh>
+				Information on SSH
+				<cr method="unimplemented"></cr>
+			</ssh>
+		</ip>
+
+		<login>
+			<failures>
+				Display Login failures in the current watch period
+				<cr method="unimplemented"></cr>
+			</failures>
+			<cr method="unimplemented"></cr>
+		</login>
+
+		<logging>
+			Show the contents of logging buffers
+			<cr method="unimplemented"></cr>
+		</logging>
+
+
+		<ntp>
+			Network time protocol
+			<status>
+				NTP status
+				<cr method="unimplemented"></cr>
+			</status>
+		</ntp>
+
+		<processes>
+			Active process statistics
+			<cr method="unimplemented"></cr>
+		</processes>
+
+		<running-config>
+			Current operating configuration
+			<cr method="unimplemented"></cr>
+		</running-config>
+
+		<snmp>
+			snmp statistics
+			<cr method="unimplemented"></cr>
+		</snmp>
+
+		<startup-config>
+			Contents of startup configuration
+			<cr method="unimplemented"></cr>
+		</startup-config>
+		<tcp>
+			Status of TCP connections
+			<brief>
+				Brief display
+				<cr method="unimplemented"></cr>
+			</brief>
+			<cr method="unimplemented"></cr>
+		</tcp>
+
+		<tech-support>
+			Show system information for Tech-Support
+			<cr method="unimplemented"></cr>
+		</tech-support>
+
+
+	</show>
+
+	<ssh>
+		Open a secure shell client connection
+		<cr method="unimplemented"></cr>
+	</ssh>
+
+	<telnet>
+		IP address or hostname of a remote system
+		<cr method="unimplemented"></cr>
+	</telnet>
+
+	<terminal>
+		Set terminal line parameters
+		<history>
+			Enable and control the command history function
+			<size>
+				Set history buffer size
+				<adrzeroa256 type="zeroa256 ">
+					Size of history buffer
+					<cr method="unimplemented"></cr>
+				</adrzeroa256>
+			</size>
+		</history>
+	</terminal>
+
+	<traceroute>
+		Trace route to destination
+		<adrWORD type="WORD">
+			Trace route to destination address or hostname
+			<cr method="unimplemented"></cr>
+		</adrWORD>
+	</traceroute>
+
+	<undebug>
+		Disable debugging functions (see also 'debug')
+		<aaa>
+			AAA Authentication, Authorization and Accounting
+			<authentication>
+				Authentication
+				<cr method="unimplemented"></cr>
+			</authentication>
+		</aaa>
+		<all>
+			Enable all debugging
+			<cr method="unimplemented"></cr>
+		</all>
+		<custom-queue>
+			Custom output queueing
+			<cr method="unimplemented"></cr>
+		</custom-queue>
+		<eigrp>
+			EIGRP Protocol information
+			<fsm>
+				EIGRP Dual Finite State Machine events/actions
+				<cr method="unimplemented"></cr>
+			</fsm>
+			<packets>
+				EIGRP packets
+				<cr method="unimplemented"></cr>
+			</packets>
+		</eigrp>
+		<frame-relay>
+			Frame Relay
+			<lmi>
+				LMI packet exchanges with service provider
+				<cr method="unimplemented"></cr>
+			</lmi>
+		</frame-relay>
+		<ip>
+			IP information
+			<icmp>
+				ICMP transactions
+				<cr method="unimplemented"></cr>
+			</icmp>
+			<nat>
+				NAT events
+				<cr method="unimplemented"></cr>
+			</nat>
+			<ospf>
+				OSPF information
+				<adj>
+					OSPF adjacency events
+					<cr method="unimplemented"></cr>
+				</adj>
+				<events>
+					OSPF events
+					<cr method="unimplemented"></cr>
+				</events>
+			</ospf>
+			<packet>
+				Packet information
+				<cr method="unimplemented"></cr>
+			</packet>
+			<rip>
+				RIP protocol transactions
+				<cr method="unimplemented"></cr>
+			</rip>
+			<routing>
+				Routing table events
+				<cr method="unimplemented"></cr>
+			</routing>
+
+		</ip>
+		<ntp>
+			NTP information
+			<packets>
+				NTP packets
+				<cr method="unimplemented"></cr>
+			</packets>
+		</ntp>
+		<ppp>
+			PPP (Point to Point Protocol) information
+			<authentication>
+				CHAP and PAP authentication
+				<cr method="unimplemented"></cr>
+			</authentication>
+			<negotiation>
+				Protocol parameter negotiation
+				<cr method="unimplemented"></cr>
+			</negotiation>
+			<packet>
+				Low-level PPP packet dump
+				<cr method="unimplemented"></cr>
+			</packet>
+		</ppp>
+	</undebug>
+
+
+	<write>
+		Write running configuration to memory, network, or terminal
+		<erase>
+			Erase NV memory
+			<cr method="unimplemented"></cr>
+		</erase>
+		<memory>
+			Write to NV memory
+			<cr method="unimplemented"></cr>
+		</memory>
+		<terminal>
+			Write to terminal
+			<cr method="unimplemented"></cr>
+		</terminal>
+		<cr method="unimplemented"></cr>
+	</write>
+</command>

@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<command Mode="4">
+
+
+	<arp>
+		Set arp type (arpa, probe, snap) or timeout
+		<timeout>
+			Set ARP cache timeout
+			<adrzeroa2147483 type="zeroa2147483">
+				Seconds
+				<cr method="timeout"></cr>
+			</adrzeroa2147483>
+		</timeout>
+	</arp>
+
+	<bandwidth>
+		Set bandwidth informational parameter
+		<adruna10000000 type="adruna10000000">
+			Bandwidth in kilobits
+			<cr method="unimplemented"></cr>
+		</adruna10000000>
+	</bandwidth>
+
+	<cdp>
+		CDP interface subcommands
+		<enable>
+			Enable CDP on interface
+			<cr method="unimplemented"></cr>
+		</enable>
+	</cdp>
+
+	<crypto>
+		Encryption/Decryption commands
+		<map>
+			Assign a Crypto Map
+			<adrWORD type="WORD">
+				Crypto Map tag
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+		</map>
+	</crypto>
+
+	<custom-queue-list>
+		Assign a custom queue list to an interface
+		<una16 type="una16">
+			Custom queue list number
+			<cr method="unimplemented"></cr>
+		</una16>
+	</custom-queue-list>
+
+	<delay>
+		Specify interface throughput delay
+		<adruna16777215 type="adruna16777215">
+			Throughput delay (tens of microseconds)
+			<cr method="unimplemented"></cr>
+		</adruna16777215>
+	</delay>
+
+	<description>
+		Interface specific description
+		<adrLINE type="LINE">
+			Up to 240 characters describing this interface
+			<cr method="unimplemented"></cr>
+		</adrLINE>
+	</description>
+
+	<duplex>
+		Configure duplex operation.
+
+		<auto>
+			Enable AUTO duplex configuration
+			<cr method="unimplemented"></cr>
+		</auto>
+		<full>
+			Force full duplex operation
+			<cr method="unimplemented"></cr>
+		</full>
+		<half>
+			Force half-duplex operation
+			<cr method="unimplemented"></cr>
+		</half>
+
+	</duplex>
+
+	<exit>
+		Exit from interface configuration mode
+		<cr method="exitFromInterfaceMode"></cr>
+	</exit>
+
+	<fair-queue>
+		Enable Fair Queuing on an Interface
+		<adruna4096 type="adruna4096">
+			Congestive Discard Threshold
+			<adrseizea4096 type="adrseize4096">
+				Number Dynamic Conversation Queues
+				<adrzeroa1000 type="adrzeroa1000">
+					Number Reservable Conversation Queues
+					<cr method="unimplemented"></cr>
+				</adrzeroa1000>
+				<cr method="unimplemented"></cr>
+			</adrseizea4096>
+			<cr method="unimplemented"></cr>
+		</adruna4096>
+		<cr method="unimplemented"></cr>
+	</fair-queue>
+
+	<hold-queue>
+		Set hold queue depth
+		<zeroa4096 type="zeroa4096">
+			Queue length
+			<out>
+				Output queue
+				<cr method="unimplemented"></cr>
+			</out>
+		</zeroa4096>
+	</hold-queue>
+
+	<ip>
+		Interface Internet Protocol config commands
+
+		<address>
+			Set the IP address of an interface
+			<adrABCD type="ABCD">
+				IP address
+				<adrABCD type="ABCD">
+					IP subnet mask
+					<cr method="ipadress"></cr>
+				</adrABCD>
+			</adrABCD>
+			<dhcp>
+				IP Address negotiated via DHCP
+				<cr method="unimplemented"></cr>
+			</dhcp>
+		</address>
+
+
+		<access-group>
+			Specify access control for packets
+			<adruna199>
+				IP access list (standard or extended)
+				<in>
+					inbound packets
+					<cr method="unimplemented"></cr>
+				</in>
+				<out>
+					outbound packets
+					<cr method="unimplemented"></cr>
+				</out>
+
+			</adruna199>
+			<adrWORD type="WORD">
+				Access-list name
+				<in>
+					inbound packets
+					<cr method="unimplemented"></cr>
+				</in>
+				<out>
+					outbound packets
+					<cr method="unimplemented"></cr>
+				</out>
+			</adrWORD>
+		</access-group>
+
+		<hello-interval>
+			Configures IP-EIGRP hello interval
+			<eigrp>
+				Enhanced Interior Gateway Routing Protocol (EIGRP)
+				<adruna65535 type="una65535">
+					Autonomous system number
+					<adruna65535 type="una65535">
+						Seconds between hello transmissions
+						<cr method="unimplemented"></cr>
+					</adruna65535>
+				</adruna65535>
+			</eigrp>
+		</hello-interval>
+
+		<helper-address>
+			Specify a destination address for UDP broadcasts
+			<adrABCD type="ABCD">
+				IP destination address
+				<cr method="unimplemented"></cr>
+			</adrABCD>
+		</helper-address>
+
+		<inspect>
+			Apply inspect name
+			<adrWORD type="WORD">
+				Name of inspection defined
+				<in>
+					Inbound inspection
+					<cr method="unimplemented"></cr>
+				</in>
+				<out>
+					Outbound inspection
+					<cr method="unimplemented"></cr>
+				</out>
+			</adrWORD>
+		</inspect>
+
+		<ips>
+			Create IPS rule
+			<adrWORD type="WORD">
+				Name of define IPS rule
+				<in>
+					Inbound inspection
+					<cr method="unimplemented"></cr>
+				</in>
+				<out>
+					Outbound inspection
+					<cr method="unimplemented"></cr>
+				</out>
+			</adrWORD>
+		</ips>
+		<mtu>
+			Set IP Maximum Transmission Unit
+			<adrsoixantehuitea1500 type="adrsoixantehuitea1500">
+				MTU (bytes)
+				<cr method="unimplemented"></cr>
+			</adrsoixantehuitea1500>
+		</mtu>
+		<nat>
+			Set IP Maximum Transmission Unit
+			<inside>
+				Inside interface for address translation
+				<cr method="unimplemented"></cr>
+			</inside>
+			<outside>
+				Outside interface for address translation
+				<cr method="unimplemented"></cr>
+			</outside>
+		</nat>
+		<ospf>
+			OSPF interface commands
+			<authentication>
+				Enable authentication
+				<message-digest>
+					Use message-digest authentication
+					<cr method="unimplemented"></cr>
+				</message-digest>
+				<null>
+					Use no authentication
+					<cr method="unimplemented"></cr>
+				</null>
+				<cr method="unimplemented"></cr>
+			</authentication>
+			<authentication-key>
+				Authentication password (key)
+				<adrLINE type="LINE">
+					The OSPF password (key) (maximum 8 characters)
+					<cr method="unimplemented"></cr>
+				</adrLINE>
+			</authentication-key>
+			<cost>
+				Interface cost
+				<adruna65535 type="una65535">
+					Cost
+					<cr method="unimplemented"></cr>
+				</adruna65535>
+			</cost>
+			<dead-interval>
+				Interval after which a neighbor is declared dead
+				<adruna65535 type="una65535">
+					Seconds
+					<cr method="unimplemented"></cr>
+				</adruna65535>
+			</dead-interval>
+			<hello-interval>
+				Time between HELLO packets
+				<adruna65535 type="una65535">
+					Seconds
+					<cr method="unimplemented"></cr>
+				</adruna65535>
+			</hello-interval>
+			<message-digest-key>
+				Message digest authentication password (key)
+				<adruna255 type="una255">
+					Key ID
+					<md5>
+						Use MD5 algorithm
+						<adrLINE type="LINE">
+							The OSPF password (key) (maximum 16 characters)
+							<cr method="unimplemented"></cr>
+						</adrLINE>
+					</md5>
+				</adruna255>
+			</message-digest-key>
+
+			<priority>
+				Router priority
+				<adrzeroa255 type="zeroa255">
+					Priority
+					<cr method="unimplemented"></cr>
+				</adrzeroa255>
+			</priority>
+
+		</ospf>
+
+		<split-horizon>
+			Perform split horizon
+			<cr method="unimplemented"></cr>
+		</split-horizon>
+
+		<summary-address>
+			Perform address summarization
+			<eigrp>
+				Priority
+				<adruna65535>
+					Autonomous system number
+					<adrABCD>
+						IP address
+						<adrABCD>
+							IP network mask
+							<adruna255>
+								Administrative distance
+								<cr method="unimplemented"></cr>
+							</adruna255>
+							<cr method="unimplemented"></cr>
+						</adrABCD>
+					</adrABCD>
+				</adruna65535>
+			</eigrp>
+		</summary-address>
+
+		<virtual-reassembly>
+			Virtual Reassembly
+			<cr method="unimplemented"></cr>
+		</virtual-reassembly>
+
+	</ip>
+
+	<mac-address>
+		Manually set interface MAC address
+		<adrH.H.H type=" HHH">
+			MAC address
+			<cr method="unimplemented"></cr>
+		</adrH.H.H>
+	</mac-address>
+
+	<mtu>
+		Set the interface Maximum Transmission Unit (MTU)
+		<adrsoixantequatrea1600 type="adrsoixantequatrea1600">
+			MTU size in bytes
+			<cr method="unimplemented"></cr>
+		</adrsoixantequatrea1600>
+	</mtu>
+
+	<no>
+		Negate a command or set its defaults
+		<arp>
+			Set arp type (arpa, probe, snap) or timeout
+			<timeout>
+				Set ARP cache timeout
+				<cr method="unimplemented"></cr>
+			</timeout>
+		</arp>
+		<bandwidth>
+			Set bandwidth informational parameter
+			<cr method="unimplemented"></cr>
+		</bandwidth>
+		<cdp>
+			CDP interface subcommands
+			<enable>
+				Enable CDP on interface
+				<cr method="unimplemented"></cr>
+			</enable>
+		</cdp>
+		<crypto>
+			Encryption/Decryption commands
+			<map>
+				Assign a Crypto Map
+				<adrWORD type="WORD">
+					Crypto Map tag
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+			</map>
+			<cr method="unimplemented"></cr>
+		</crypto>
+		<custom-queue-list>
+			Assign a custom queue list to an interface
+			<cr method="unimplemented"></cr>
+		</custom-queue-list>
+		<delay>
+			Specify interface throughput delay
+			<cr method="unimplemented"></cr>
+		</delay>
+		<description>
+			Interface specific description
+			<cr method="unimplemented"></cr>
+		</description>
+		<duplex>
+			Configure duplex operation.
+			<cr method="unimplemented"></cr>
+		</duplex>
+		<fair-queue>
+			Enable Fair Queuing on an Interface
+			<adruna4096 type="una4096">
+				Congestive Discard Threshold
+				<adrseizea4096 type="adrseizea4096">
+					Number Dynamic Conversation Queues
+					<adrzeroa1000 type="zeroa1000">
+						Number Reservable Conversation Queues
+						<cr method="unimplemented"></cr>
+					</adrzeroa1000>
+					<cr method="unimplemented"></cr>
+				</adrseizea4096>
+				<cr method="unimplemented"></cr>
+			</adruna4096>
+			<cr method="unimplemented"></cr>
+		</fair-queue>
+
+		<hold-queue>
+			Set hold queue depth
+			<adrzeroa4096 type="zeroa4096">
+				Queue length
+				<out>
+					Output queue
+					<cr method="unimplemented"></cr>
+				</out>
+			</adrzeroa4096>
+			<out>
+				Output queue
+				<cr method="unimplemented"></cr>
+			</out>
+		</hold-queue>
+		<ip>
+			Interface Internet Protocol config commands
+			<access-group>
+				Specify access control for packets
+				<adruna199 type="una199">
+					IP access list (standard or extended)
+					<in>
+						inbound packets
+						<cr method="unimplemented"></cr>
+					</in>
+					<out>
+						outbound packets
+						<cr method="unimplemented"></cr>
+					</out>
+				</adruna199>
+				<adrWORD type="WORD">
+					Access-list name
+					<in>
+						inbound packets
+						<cr method="unimplemented"></cr>
+
+					</in>
+					<out>
+						outbound packets
+						<cr method="unimplemented"></cr>
+					</out>
+				</adrWORD>
+			</access-group>
+			<address>
+				Set the IP address of an interface
+				<dhcp>
+					IP Address negotiated via DHCP
+					<cr method="unimplemented"></cr>
+				</dhcp>
+				<cr method="unimplemented"></cr>
+			</address>
+			<hello-interval>
+				Configures IP-EIGRP hello interval
+				<eigrp>
+					Enhanced Interior Gateway Routing Protocol (EIGRP)
+					<adruna65535 type="una65535">
+						Autonomous system number
+						<cr method="unimplemented"></cr>
+					</adruna65535>
+				</eigrp>
+			</hello-interval>
+			<helper-address>
+				Specify a destination address for UDP broadcasts
+				<adrABCD type="ABCD">
+					IP destination address
+					<cr method="unimplemented"></cr>
+				</adrABCD>
+			</helper-address>
+			<inspect>
+				Apply inspect name
+				<adrWORD type=" WORD">
+					Name of inspection defined
+					<in>
+						inbound packets
+						<cr method="unimplemented"></cr>
+					</in>
+
+					<out>
+						outbound packets
+						<cr method="unimplemented"></cr>
+					</out>
+				</adrWORD>
+			</inspect>
+			<ips>
+				Create IPS rule
+				<adrWORD type=" WORD">
+					Name of define IPS rule
+					<in>
+						inbound packets
+						<cr method="unimplemented"></cr>
+					</in>
+					<out>
+						outbound packets
+						<cr method="unimplemented"></cr>
+					</out>
+				</adrWORD>
+			</ips>
+			<mtu>
+				Set IP Maximum Transmission Unit
+				<cr method="unimplemented"></cr>
+			</mtu>
+			<nat>
+				NAT interface commands
+				<inside>
+					Inside interface for address translation
+					<cr method="unimplemented"></cr>
+				</inside>
+				<outside>
+					Outside interface for address translation
+					<cr method="unimplemented"></cr>
+				</outside>
+			</nat>
+			<ospf>
+				OSPF interface commands
+				<authentication>
+					Enable authentication
+					<cr method="unimplemented"></cr>
+				</authentication>
+				<authentication-key>
+					Authentication password (key)
+					<cr method="unimplemented"></cr>
+
+				</authentication-key>
+				<cost>
+					Interface cost
+					<cr method="unimplemented"></cr>
+				</cost>
+				<dead-interval>
+					Interval after which a neighbor is declared dead
+					<cr method="unimplemented"></cr>
+				</dead-interval>
+				<hello-interval>
+					Time between HELLO packets
+					<cr method="unimplemented"></cr>
+				</hello-interval>
+				<message-digest-key>
+					Message digest authentication password (key)
+					<adruna255 type="una255">
+						Key ID
+						<cr method="unimplemented"></cr>
+					</adruna255>
+				</message-digest-key>
+				<priority>
+					Router priority
+					<cr method="unimplemented"></cr>
+				</priority>
+			</ospf>
+
+			<split-horizon>
+				Perform split horizon
+				<cr method="unimplemented"></cr>
+			</split-horizon>
+
+			<summary-address>
+				Perform address summarization
+				<eigrp>
+					Enhanced Interior Gateway Routing Protocol (EIGRP)
+					<adruna65535 type="una65535">
+						Autonomous system number
+						<adrABCD type="ABCD">
+							IP address
+							<adrABCD type="ABCD">
+								IP network mask
+								<adruna255 type="una255">
+									Administrative distance
+									<cr method="unimplemented"></cr>
+								</adruna255>
+								<cr method="unimplemented"></cr>
+							</adrABCD>
+						</adrABCD>
+					</adruna65535>
+				</eigrp>
+			</summary-address>
+
+			<virtual-reassembly>
+				Virtual Reassembly
+				<cr method="unimplemented"></cr>
+			</virtual-reassembly>
+		</ip>
+
+		<mac-address>
+			Manually set interface MAC address
+			<cr method="unimplemented"></cr>
+		</mac-address>
+
+		<mtu>
+			Set the interface Maximum Transmission Unit (MTU)
+			<cr method="unimplemented"></cr>
+		</mtu>
+
+		<pppoe>
+			pppoe interface subcommands
+			<enable>
+				Enable pppoe
+				<cr method="unimplemented"></cr>
+			</enable>
+		</pppoe>
+
+		<priority-group>
+			Assign a priority group to an interface
+			<cr method="unimplemented"></cr>
+		</priority-group>
+
+		<service-policy>
+			Configure QoS Service Policy
+			<input>
+				Assign policy-map to the input of an interface
+				<adrWORD type="WORD">
+					policy-map name
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+			</input>
+			<output>
+				Assign policy-map to the output of an interface
+				<adrWORD type="WORD">
+					policy-map name
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+			</output>
+		</service-policy>
+
+		<shutdown>
+			Shutdown the selected interface
+			<cr method="noShutDown"></cr>
+		</shutdown>
+
+		<speed>
+			Configure speed operation.
+			<cr method="unimplemented"></cr>
+		</speed>
+
+		<tx-ring-limit>
+			Configure PA level transmit ring limit
+			<cr method="unimplemented"></cr>
+		</tx-ring-limit>
+
+		<zone-member>
+			Apply zone name
+			<security>
+				Security zone
+				<adrWORD type="WORD">
+					Name of zone defined
+					<cr method="unimplemented"></cr>
+				</adrWORD>
+			</security>
+		</zone-member>
+
+	</no>
+
+
+	<pppoe>
+		pppoe interface subcommands
+		<enable>
+			Enable pppoe
+			<cr method="unimplemented"></cr>
+		</enable>
+	</pppoe>
+
+	<priority-group>
+		Assign a priority group to an interface
+		<adruna16 type="una16">
+			Priority group
+			<cr method="unimplemented"></cr>
+		</adruna16>
+	</priority-group>
+
+	<service-policy>
+		Configure QoS Service Policy
+		<input>
+			Assign policy-map to the input of an interface
+			<adrWORD type="WORD">
+				policy-map name
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+		</input>
+		<output>
+			Assign policy-map to the output of an interface
+			<adrWORD type="WORD">
+				policy-map name
+				<cr method="unimplemented"></cr>
+			</adrWORD>
+		</output>
+	</service-policy>
+
+	<shutdown>
+		Shutdown the selected interface
+		<cr method="shutDown"></cr>
+	</shutdown>
+
+	<speed>
+		Configure speed operation.
+		<adrdix type="dix">
+			Force 10 Mbps operation
+			<cr method="unimplemented"></cr>
+		</adrdix>
+
+		<adrcent type="cent">
+			Force 100 Mbps operation
+			<cr method="unimplemented"></cr>
+		</adrcent>
+		<auto>
+			Enable AUTO speed configuration
+			<cr method="unimplemented"></cr>
+		</auto>
+	</speed>
+
+	<tx-ring-limit>
+		Configure PA level transmit ring limit
+		<adruna32767 type="una32767 ">
+			Number (ring limit)
+			<cr method="unimplemented">
+			</cr>
+
+		</adruna32767>
+	</tx-ring-limit>
+
+
+	<zone-member>
+		Apply zone name
+		<security>
+			Security zone
+			<adrWORD type="WORD">
+				Name of zone defined
+				<cr methode="unimplemented"></cr>
+			</adrWORD>
+		</security>
+	</zone-member>
+
+
+
+</command>
+
+
+

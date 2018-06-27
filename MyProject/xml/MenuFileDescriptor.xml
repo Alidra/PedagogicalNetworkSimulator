@@ -1,0 +1,37 @@
+<Menus>
+<Menu MenuName="File" MenuKey="68">
+<menuCommand>
+<name>New</name>
+<imageAccessPath>image/s.png</imageAccessPath>
+<shortcutKey>r</shortcutKey>
+<ShortCutCombinationKey>86</ShortCutCombinationKey>
+<ShortcutControlKey>2</ShortcutControlKey>
+	<aMethodName>NewProject</aMethodName></menuCommand>
+<menuCommand>
+<name>Open</name>
+<imageAccessPath>image/new.png</imageAccessPath>
+<shortcutKey>n</shortcutKey>
+<ShortCutCombinationKey>89</ShortCutCombinationKey>
+<ShortcutControlKey>2</ShortcutControlKey>
+	<aMethodName>Load</aMethodName>
+</menuCommand>
+</Menu>
+
+<Menu MenuName="MenuP" MenuKey="88">
+<menuCommand>
+<name>New</name>
+<imageAccessPath>image/s.png</imageAccessPath>
+<shortcutKey>r</shortcutKey>
+<ShortCutCombinationKey>88</ShortCutCombinationKey>
+<ShortcutControlKey>2</ShortcutControlKey>
+	<aMethodName>NewProject</aMethodName></menuCommand>
+<menuCommand>
+<name>Open</name>
+<imageAccessPath>image/new.png</imageAccessPath>
+<shortcutKey>n</shortcutKey>
+<ShortCutCombinationKey>90</ShortCutCombinationKey>
+<ShortcutControlKey>2</ShortcutControlKey>
+	<aMethodName>Load</aMethodName>
+</menuCommand>
+</Menu>
+</Menus>

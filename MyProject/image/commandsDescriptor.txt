@@ -1,0 +1,4 @@
+new image/new.png r 146 2 NewProject
+open image/open.png n 142 2 Load
+save image/save.png s 147 2 Save
+exit image exit.png e 133 2 exit   
